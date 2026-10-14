@@ -1,8 +1,5 @@
-# Planify (HTML/JavaScript Webapp)
-* Learn about web development on [freeCodeCamp](https://www.freecodecamp.org/). I suggest completing the shorter legacy version of their web dev programs:
-
-    - [Legacy HTML/CSS Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/)
-    - [Legcay JavaScript Certification](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/)
+# Planify
+A travel planner in C++ using the QT Framework.
 
 ## Overview
 * Plan activities for future trips
