@@ -11,26 +11,26 @@ int main(int argc, char* argv[]) {
 
     // 2. Create the main window container
     QWidget window;
-    window.setWindowTitle("Planify - Travel Planner");
+    window.setWindowTitle("My QT Project");
     window.resize(450, 300);
 
     // 3. Create a vertical layout to manage widget positioning
     QVBoxLayout* layout = new QVBoxLayout(&window);
 
     // 4. Add UI elements
-    QLabel* titleLabel = new QLabel("Welcome to Planify!", &window);
+    QLabel* titleLabel = new QLabel("Welcome to My QT Project!", &window);
     titleLabel->setAlignment(Qt::AlignCenter);
     titleLabel->setStyleSheet("font-size: 18px; font-weight: bold; color: #2C3E50;");
 
-    QPushButton* planButton = new QPushButton("Start Planning", &window);
-    planButton->setStyleSheet("padding: 8px; font-size: 14px;");
+    QPushButton* button = new QPushButton("Get Started", &window);
+    button->setStyleSheet("padding: 8px; font-size: 14px;");
 
     // 5. Connect the button's clicked signal to close the app (example of Signals & Slots)
-    QObject::connect(planButton, &QPushButton::clicked, &app, &QApplication::quit);
+    QObject::connect(button, &QPushButton::clicked, &app, &QApplication::quit);
 
     // 6. Add widgets to the layout
     layout->addWidget(titleLabel);
-    layout->addWidget(planButton);
+    layout->addWidget(button);
 
     // 7. Show the window on screen
     window.show();
