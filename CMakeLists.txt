@@ -14,9 +14,12 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets Network)
 
 qt_standard_project_setup()
 
-qt_add_executable(${PROJECT_NAME}
-    src/main.cpp
+file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h"
 )
+
+qt_add_executable(${PROJECT_NAME} ${SOURCES})
 
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 
