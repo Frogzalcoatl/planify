@@ -1,3 +1,8 @@
 {
-    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json"
+    "cmake.copyCompileCommands": "${workspaceFolder}/compile_commands.json",
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.h": "cpp",
+        ".clang-format": "yaml"
+    },
 }
